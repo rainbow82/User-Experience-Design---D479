@@ -21,7 +21,8 @@ header {@media only screen and (max-width: 600px) {
   height: 100px;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(to bottom right, red, yellow);
+  background-image: linear-gradient(to bottom right, #ec8484,
+  #e2e272);
   justify-content: space-between;
 }
 
@@ -145,19 +146,6 @@ header {@media only screen and (max-width: 600px) {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.pet-section {
-  margin: 200px 5% 50px;
-  width: 100%;
-}
-
-.pet-container {
-  width: 50%;
-}
-
-.pet-container img {
-  width: 200px;
-  height: 200px;
-}
 
 .margin-top-100 {
   margin-top: 100px;
@@ -194,7 +182,7 @@ header {@media only screen and (max-width: 600px) {
 .services-container-small {
   background-color: #d6efef;
   opacity: 50%;
-  width: 100%;
+  width: 400px;
   /* margin-top: -200px; */
   height: 300px;
   /* border: 2px solid deeppink; */
@@ -314,7 +302,6 @@ footer a:hover {
   height: fit-content;
   background-color: #ffffff;
   color: #003b6d;
-  border-top: 2px solid #bdbdbd
 }
 
 footer ul {
@@ -350,6 +337,8 @@ footer li {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  margin-top: 50px;
+  z-index: 2;
 }
 
 .topnav a {
@@ -376,6 +365,11 @@ footer li {
   display: none;
 }
 
+.faq-section {
+  background-color: #d6efef;
+  margin-top: 50px;
+}
+
 @media only screen and (max-width: 925px) {
   /* body {
     background-color: rgb(187, 230, 173);
@@ -385,29 +379,33 @@ footer li {
     height: 25%;
     width: 25%;
   }
-    .topnav a:not(:first-child) {
-      display: none;
-    }
 
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
 
-        /* .topnav.responsive {
-          position: relative;
-        } */
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    /* margin-top: -15px; */
+  }
 
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
+
   }
 
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
+    top: 0;
+    /* margin-top: 75px; */
   }
 
   .hero-header {
@@ -436,10 +434,6 @@ footer li {
     padding: 15px;
   }
 
-  .faq-section {
-    background-color: #d6efef;
-  }
-
   .faq-section ul{
     padding: 15px;
   }
@@ -453,13 +447,9 @@ footer li {
     bottom: 0;
     width: 100%;
     padding: 15px;
-    height: fit-content;
     background-color: #9C27B0;
     color: #003b6d;
-    border: 2px solid #bdbdbd;
     position: relative;
-    height: 50px;
-    margin-top: 50px;
     z-index: 5;
   }
 
