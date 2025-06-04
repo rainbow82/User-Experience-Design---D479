@@ -428,8 +428,20 @@ footer li {
     margin-bottom: 25px;
   }
 
-  .faq-section{
-    border: 2px solid deeppink;
+  .services-container-text p {
+    padding: 15px;
+  }
+
+  .container-title {
+    padding: 15px;
+  }
+
+  .faq-section {
+    background-color: #d6efef;
+  }
+
+  .faq-section ul{
+    padding: 15px;
   }
 
   .services {
