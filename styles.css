@@ -189,6 +189,14 @@ header {@media only screen and (max-width: 600px) {
   margin-top: -400px;
 }
 
+.homeSection {
+  margin: 0 25px 15px 0;
+}
+
+.padding-15 {
+  padding: 15px;
+}
+
 .services {
   margin: 5%;
   /* height: 670px; */
@@ -432,22 +440,18 @@ footer li {
     /* margin-top: 75px; */
   }
 
-  .hero-header {
+  /* .hero-header {
     margin-top: -150px;
-  }
+  } */
 
   .hero-section {
-    height: 200px;
+    /* height: 200px; */
     border: 2px solid darkgreen
   }
 
   .hero-section img {
     height: 100%;
     width: 100%;
-  }
-
-  .homeSection {
-    margin-bottom: 25px;
   }
 
   .services-container-text p {
