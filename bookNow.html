@@ -61,19 +61,19 @@
               <td>American Airlines</td>
               <td>6 hours</td>
               <td>2</td>
-              <td><button>Book</button></td>
+              <td><button class="table-button" onclick="bookAirline()">Book</button></td>
             </tr>
             <tr>
               <td>Southwest</td>
               <td>6 hours</td>
               <td>2</td>
-              <td><button>Book</button></td>
+              <td><button class="table-button" onclick="bookAirline()">Book</button></td>
             </tr>
             <tr>
               <td>Delta</td>
               <td>6 hours</td>
               <td>2</td>
-              <td><button>Book</button></td>
+              <td><button class="table-button" onclick="bookAirline()">Book</button></td>
             </tr>
           </tbody>
         </table>
@@ -96,17 +96,17 @@
             <tr>
               <td>Hotel 1</td>
               <td>1234 Happy Ave</td>
-              <td><button>Book</button></td>
+              <td><button class="table-button" onclick="bookHotel()">Book</button></td>
             </tr>
             <tr>
               <td>Hotel 2</td>
               <td>1234 Happy Ave</td>
-              <td><button>Book</button></td>
+              <td><button class="table-button" onclick="bookHotel()">Book</button></td>
             </tr>
             <tr>
               <td>Hotel 3</td>
               <td>1234 Happy Ave</td>
-              <td><button>Book</button></td>
+              <td><button class="table-button" onclick="bookHotel()">Book</button></td>
             </tr>
           </tbody>
         </table>
@@ -120,12 +120,6 @@
     <div>
       <div class="footer-img-column">
         <img src="./images/island.png" alt="island logo" height="100" width="100" class="header-img">
-        <!-- <a href="./contact.html">
-          <button class="consultation-button">
-            <img src="./images/petshoplogo.png" alt="Paradigm Pet Professionals logo" height="25" width="25">
-            Book a Consultation
-          </button>
-        </a> -->
       </div>
     </div>
     <div>
@@ -144,6 +138,14 @@
         x.className = "topnav";
       }
     }
+
+    function bookAirline() {
+        alert("You're being re-directed to the airline site to book");
+      }
+
+    function bookHotel() {
+        alert("You're being re-directed to the hotel site to book");
+      }
   </script>
 </body>
 
